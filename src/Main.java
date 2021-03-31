@@ -12,6 +12,7 @@ public class Main {
         System.out.println("У " + mom + " есть сын, " + son);
 
         try {
+
             // Не хватает обяхательных полей
             new PersonBuilder().build();
         } catch (IllegalStateException e) {
@@ -19,7 +20,6 @@ public class Main {
         }
 
         try {
-            // Возраст недопустимый
             new PersonBuilder().setAge(-100).build();
         } catch (IllegalArgumentException e) {
             e.printStackTrace();

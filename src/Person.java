@@ -1,32 +1,60 @@
 public class Person {
     protected final String name;
     protected final String surname;
-    //...
+    protected String address;
+    protected int age;
 
     public Person(String name, String surname) {
-        //...
+        this.name = name;
+        this.surname= surname;
     }
 
     public Person(String name, String surname, int age) {
-        //...
+        this.name = name;
+        this.surname= surname;
+        this.age = age;
     }
 
-    public boolean hasAge() { /*...*/ }
-    public boolean hasAddress() { /*...*/ }
+    public boolean hasAge(int age) {
+        if (age != null) return true;
+    }
 
-    public String getName() { /*...*/ }
-    public String getSurname() { /*...*/ }
-    public int getAge() { /*...*/ }
-    public String getAddress() { /*...*/ }
+    public boolean hasAddress() {
+        if (address != null) return true;
+    }
 
-    public String setAddress(String address) { /*...*/ }
-    public void happyBirthday() { /*...*/ }
+    public String getName() {
+        return this.name;
+    }
+
+    public String getSurname() {
+        return this.surname;
+    }
+    public int getAge() {
+        return this.age;
+    }
+    public String getAddress() {
+        return this.address;
+    }
+
+    public String setAddress(String address) {
+        this.address = address;
+    }
+    public void happyBirthday() {
+        this.age += 1;
+    }
 
     @Override
-    public String toString() { /*...*/ }
+    public String toString() {
+
+    }
 
     @Override
-    public int hashCode() { /*...*/ }
+    public int hashCode() {
 
-    public PersonBuilder newChildBuilder() { /*...*/ }
+    }
+
+    public PersonBuilder newChildBuilder() {
+
+    }
 }
