@@ -12,9 +12,7 @@ public class Main {
         System.out.println("У " + mom + " есть сын, " + son);
 
         try {
-
-            // Не хватает обяхательных полей
-            new PersonBuilder().build();
+            new PersonBuilder().setName("Ahnn").build();
         } catch (IllegalStateException e) {
             e.printStackTrace();
         }

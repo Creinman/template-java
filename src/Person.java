@@ -16,11 +16,11 @@ public class Person {
     }
 
     public boolean hasAge(int age) {
-        if (age != null) return true;
+        if (this.age != null) return true;
     }
 
     public boolean hasAddress() {
-        if (address != null) return true;
+        if (this.address != null) return true;
     }
 
     public String getName() {
