@@ -6,12 +6,12 @@ public class Person {
 
     public Person(String name, String surname) {
         this.name = name;
-        this.surname= surname;
+        this.surname = surname;
     }
 
     public Person(String name, String surname, int age) {
         this.name = name;
-        this.surname= surname;
+        this.surname = surname;
         this.age = age;
     }
 
@@ -30,9 +30,11 @@ public class Person {
     public String getSurname() {
         return this.surname;
     }
+
     public int getAge() {
         return this.age;
     }
+
     public String getAddress() {
         return this.address;
     }
@@ -40,6 +42,7 @@ public class Person {
     public String setAddress(String address) {
         this.address = address;
     }
+
     public void happyBirthday() {
         this.age += 1;
     }
